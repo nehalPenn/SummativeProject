@@ -19,7 +19,10 @@ public class WordController {
 
     public WordController() {
 
+        Definition programmer = new Definition(1, "programmer", "a person who writes computer programs.");
+        Definition software = new Definition(1, "software", "a set of instructions, data or programs used to operate computers and execute specific tasks");
 
+        defList = Arrays.asList(programmer, software);
 
     }
 
@@ -29,10 +32,14 @@ public class WordController {
         LocalDate date = LocalDate.now();
         DayOfWeek day = date.getDayOfWeek();
 
-        if (day.equals(DayOfWeek.MONDAY)) {
-            System.out.println("Something!");
-        }
+        //random quote
+        Random random = new Random();
+        //random index
+        int index = random.nextInt(defList.size());
+        //get that random object from this
+        Definition randomDef = defList.get(index);
 
-        return null;
+
+        return randomDef;
     }
 }
