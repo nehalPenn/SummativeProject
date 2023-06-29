@@ -21,8 +21,18 @@ public class WordController {
 
         Definition programmer = new Definition(1, "programmer", "a person who writes computer programs.");
         Definition software = new Definition(1, "software", "a set of instructions, data or programs used to operate computers and execute specific tasks");
+        Definition soccer = new Definition(1, "soccer", "a game played by two teams of eleven players with a round ball");
+        Definition manikin = new Definition(1, "manikin", "a life-size dummy used to display clothes");
+        Definition cordial = new Definition(1, "cordial", "politely warm and friendly");
+        Definition canoodle = new Definition(1, "canoodle", "fondle or pet affectionately");
+        Definition civilian = new Definition(1, "civilian", "a nonmilitary citizen");
+        Definition revolt = new Definition(1, "revolt", "rise up against an authority");
+        Definition fascist = new Definition(1, "fascist", "an adherent of right-wing authoritarian views");
+        Definition upsurge = new Definition(1, "upsurge", "a sudden or abrupt strong increase");
 
-        defList = Arrays.asList(programmer, software);
+       
+
+        defList = Arrays.asList(programmer, software, soccer, manikin, cordial, canoodle, civilian, revolt, fascist, upsurge);
 
     }
 
