@@ -30,7 +30,6 @@ public class WordController {
         Definition fascist = new Definition(1, "fascist", "an adherent of right-wing authoritarian views");
         Definition upsurge = new Definition(1, "upsurge", "a sudden or abrupt strong increase");
 
-       
 
         defList = Arrays.asList(programmer, software, soccer, manikin, cordial, canoodle, civilian, revolt, fascist, upsurge);
 
