@@ -40,6 +40,8 @@ public class DefinitionTest {
         // Convert Java object to JSON
         String outputJson = mapper.writeValueAsString(defList);
 
+        // comment
+
         // ACT
         mockMvc.perform(get("/word"))                // Perform the GET request
                 .andDo(print())                          // Print results to console

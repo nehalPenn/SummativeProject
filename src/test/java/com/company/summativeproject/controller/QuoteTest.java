@@ -39,6 +39,7 @@ public class QuoteTest {
         // Convert Java object to JSON
         String outputJson = mapper.writeValueAsString(quoteList);
 
+        //comment
         // ACT
         mockMvc.perform(get("/quote"))                // Perform the GET request
                 .andDo(print())                          // Print results to console
