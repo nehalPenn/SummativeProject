@@ -30,14 +30,14 @@ public class MagicController {
     @ResponseStatus(value = HttpStatus.CREATED)
     public Answer returnMagicAnswer(@RequestBody Answer answer) {
 
-        //random quote
+        //random answer
         Random random = new Random();
         //random index
         int index = random.nextInt(answerResponse.size());
         //get that random object from this
         Answer randomAnswer = answerResponse.get(index);
 
-        //Returns the question asksed by the user, with a random answer
+        //Returns the question asked by the user, with a random answer
         answer.setAnswer(randomAnswer.getAnswer());
         answer.setId(randomAnswer.getId());
 

@@ -35,7 +35,7 @@ public class DefinitionTest {
 
     // Testing GET /quote
     @Test
-    public void shouldReturnQuote() throws Exception {
+    public void shouldReturnWord() throws Exception {
         // ARRANGE
         // Convert Java object to JSON
         String outputJson = mapper.writeValueAsString(defList);

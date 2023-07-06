@@ -32,13 +32,15 @@ public class MagicTest {
     public void setUp() {
     }
 
-    // Testing PUT /magic
+    // Testing POST /magic
     @Test
     public void shouldReturnRandomAnswer() throws Exception {
         Answer question = new Answer();
         question.setQuestion("Will I win the lottery?");
         String inputJson = this.mapper.writeValueAsString(question);
-        this.mockMvc.perform(MockMvcRequestBuilders.post("/magic", new Object[0]).content(inputJson).contentType(MediaType.APPLICATION_JSON)).andDo(MockMvcResultHandlers.print()).andExpect(MockMvcResultMatchers.status().isCreated());
-
+        this.mockMvc.perform(MockMvcRequestBuilders.post("/magic", new Object[0]).content(inputJson)
+                .contentType(MediaType.APPLICATION_JSON))
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(MockMvcResultMatchers.status().isCreated());
     }
 }
