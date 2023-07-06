@@ -25,7 +25,7 @@ public class QuoteController {
         Quote chinendu = new Quote("Chinendu Smith", "He who eats quietly, eats twice.", 9);
         Quote ken = new Quote("Ken Doll", "Lead by example and others will follow.", 10);
 
-        quoteList = Arrays.asList(marie, walter, cato, ayn);
+        quoteList = Arrays.asList(marie, walter, cato, ayn, jill, frank, bob, sid, brit, chinendu, ken);
     }
 
     @RequestMapping(value = "/quote", method = RequestMethod.GET)

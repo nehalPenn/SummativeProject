@@ -6,6 +6,18 @@ public class Answer {
     String answer;
     String question;
 
+
+    public Answer(String question, String answer, int id) {
+        this.question = question;
+        this.answer = answer;
+        this.id = id;
+    }
+
+    public Answer(String answer, int id) {
+        this.answer = answer;
+        this.id = id;
+    }
+
     public int getId() {
         return id;
     }
