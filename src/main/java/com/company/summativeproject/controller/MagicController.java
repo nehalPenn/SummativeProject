@@ -37,7 +37,14 @@ public class MagicController {
         //get that random object from this
         Answer randomAnswer = answerResponse.get(index);
 
-        return randomAnswer;
+        //Returns the question asksed by the user, with a random answer
+        answer.setAnswer(randomAnswer.getAnswer());
+        answer.setId(randomAnswer.getId());
+
+
+        return answer;
     }
+
+
 
 }
